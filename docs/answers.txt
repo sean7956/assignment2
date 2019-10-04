@@ -1,0 +1,59 @@
+a)
+warning: LF will be replaced by CRLF in docs/status.txt.
+The file will have its original line endings in your working directory
+[master 2fe1926] Added Docs folder
+ 1 file changed, 6 insertions(+)
+ create mode 100644 docs/status.txt
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 753 bytes | 150.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/sean7956/assignment2.git
+   f4975e5..2fe1926  master -> master
+
+b)
+9, I got this from the git log command
+
+c)
+The .gitignore was last edited on Wed Sep 25 18:13:30 2019.
+I got this information from doing git log --follow .gitignore
+
+d)
+Branches help developers that are working in parallel by allowing people to work on thier own parts.
+Branches also can be used to make sure that everything works properly before pushing it to master.
+
+e)
+git log will show all the commits that have been done throughout the project.
+git status is more focused on the current working directory with info on changes
+that have been tracked or not tracked. It helps tell the programmer what has been 
+changed, added or deleted.
+
+f) 
+I used log --follow vehicle.h to see all commits that included vehicle.h
+
+g)
+git log --grep="file"
+This will show every commit that had file in the message.
+
+h)
+Inheritance allows classes to take on the properties of the parent class and then add onto it.
+It is a parent to child relation ship where the parent shares witht he child, but not the other way.
+Polymorphism is what allows objects of different types to be grouped together and have the same 
+function work on the different objects because of the related parent class.
+Encapsulation is used to hide member data and functions, such as declaring them as private.
+In C++ some examples are private or protected, where protected can be used by the children.
+
+i)
+In the integration-manager sytle of implementation each developer clones thier own part to change it.
+Then when finished they will send a a request to a maintainer in order for them to pull in the changes.
+As for the dictator and lieutenants workflow, the developers push to the lieutentants, then lieutenants
+to the dictator, of which the dictator will then make the final push.
+
+j)
+In a centralized workflow, there can be issues when two developers are working on something that overlaps,
+which can cause issues. Without a rank above them, they won't have someone to fix these issues.
+This error is increased when more and more people work on the project. In that case having people
+above the developers that are there to fix these issues will make the workflow much smoother.

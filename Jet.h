@@ -8,17 +8,20 @@
 #include "PoweredVehicle.h"
 
 class Jet : public PoweredVehicle{
+
 private:
     int numberOfEngines;
 
 public:
     Jet();
-    explicit Jet(string brand, string model, string fueltype, string numEng);
+
+    explicit Jet(string brand, string model, string fueltype,
+            int numEng);
 
     virtual ~Jet();
-    string getNumbEng();
+    int getNumbEng();
     void setNumEng(int x);
-    virtual double mileageEstimeat(double time);
+    virtual double mileageEstimate(double time);
     virtual string toString();
 
 };

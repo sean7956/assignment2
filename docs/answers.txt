@@ -43,8 +43,7 @@ Inheritance allows classes to take on the properties of the parent class and the
 It is a parent to child relation ship where the parent shares witht he child, but not the other way.
 Polymorphism is what allows objects of different types to be grouped together and have the same 
 function work on the different objects because of the related parent class.
-Encapsulation is used to hide member data and functions, such as declaring them as private.
-In C++ some examples are private or protected, where protected can be used by the children.
+Encapsulation is used to bundle and hide member data as well as functions, such as declaring them as private.
 
 i)
 In the integration-manager sytle of implementation each developer clones thier own part to change it.
@@ -57,3 +56,10 @@ In a centralized workflow, there can be issues when two developers are working o
 which can cause issues. Without a rank above them, they won't have someone to fix these issues.
 This error is increased when more and more people work on the project. In that case having people
 above the developers that are there to fix these issues will make the workflow much smoother.
+
+5) OOP Principles
+The Driving simulator is using both polymoprhism and encapsulation.
+It uses polymorphism in main.cpp where different classes are put into an array of which the same function
+is then used on every object in the array. Normally having different classes in the same array would not work.
+Encapsulation is used for all the different kinds of classes that were made as they each had there own bundles,
+hidden data as well as setters and getters for the data they stored.

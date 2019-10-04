@@ -2,6 +2,7 @@
 #include "Car.h"
 #include "Bicycle.h"
 #include "Skateboard.h"
+#include "Jet.h"
 #include "ctime"
 #include "cstdlib"
 void printVehiclesRoster(Vehicle **vehicles, int size);
@@ -9,7 +10,7 @@ int main() {
     srand(time(NULL));      //Added this here so the random times are not the same
 
     std::cout << "Driving simulator" << std::endl;
-    int size = 8;
+    int size = 10;
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
@@ -21,6 +22,8 @@ int main() {
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
     vehiclesArray[6] = new Skateboard("Zero", "MK II");
     vehiclesArray[7] = new Skateboard("Bueno", "SPO");
+    vehiclesArray[8] = new Jet();
+    vehiclesArray[9] = new Jet("Sean O's", "cool beans", "Rocket", 3 );
 
     printVehiclesRoster(vehiclesArray, size);
 

@@ -4,7 +4,6 @@
 
 #include "Skateboard.h"
 #include<cstdlib>
-#include<ctime>
 #include <cmath>
 
 Skateboard::Skateboard(string brand, string model) {
@@ -13,7 +12,6 @@ Skateboard::Skateboard(string brand, string model) {
 }
 
 double Skateboard::mileageEstimate(double num) {
-    srand(time(0));
     int random = rand() % 40;   //Sets up the mileage
     random += 10;               //Adds 10 to put it into the right bounds
     double y = double(random)/100;  //makes it so the mileage is to the right power

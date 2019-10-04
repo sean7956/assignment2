@@ -9,11 +9,8 @@
 
 class Skateboard : public Vehicle{
 public:
-    explicit Skateboard(string brand, string model, int time);  //The Constructor
+    explicit Skateboard(string brand, string model);  //The Constructor
     virtual ~Skateboard();      //Destructor
-
-    int getTime;        //getter
-    int setTime;        //Setter
     virtual double mileageEstimate(double time);    //Finds the distance based on time
     virtual string toString();
 };

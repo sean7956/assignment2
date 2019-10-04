@@ -27,13 +27,13 @@ numberOfEngines = x;
 }
 
 double Jet::mileageEstimate(double time) {
-    int random = (rand() % 60) + 40;
-    double mile = random * time;
-    if ( numberOfEngines > 2 && getFuelType() == "Rocket")
+    int random = (rand() % 60) + 40;        //Sets the bounds of the miles per minute
+    double mile = random * time;            //gets the mileage
+    if ( numberOfEngines > 2 && getFuelType() == "Rocket")  //checks the case to add more to the mileage
     {
         int numengs = numberOfEngines;
         double percentage = mile * 0.055;
-        mile += numengs*percentage;
+        mile += numengs*percentage;         //Adds the extra percent when more than 2 rockets
 
     }
     return mile;
